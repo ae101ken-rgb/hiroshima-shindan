@@ -6,15 +6,15 @@ const FONT = `@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Got
 
 // Data
 const RENT = {
-  single:   { tokyo: 120000, hiroshima: 55000 },
-  couple:   { tokyo: 160000, hiroshima: 75000 },
-  family1:  { tokyo: 210000, hiroshima: 90000 },
-  family2:  { tokyo: 250000, hiroshima: 100000 },
+  single:   { tokyo: 104000, hiroshima: 56000 },
+  couple:   { tokyo: 107000, hiroshima: 74000 },
+  family1:  { tokyo: 154000, hiroshima: 87000 },
+  family2:  { tokyo: 180000, hiroshima: 100000 },
 };
-const COMMUTE_COST = { tokyo: 15000, hiroshima: 6000 };
+const COMMUTE_COST = { tokyo: 12000, hiroshima: 6000 };
 const FOOD = { tokyo: 60000, hiroshima: 45000 };
-const CHILDCARE = { tokyo: 50000, hiroshima: 25000 };
-const COMMUTE_MIN = { tokyo: 48, hiroshima: 23 };
+const CHILDCARE = { tokyo: 30000, hiroshima: 30000 };
+const COMMUTE_MIN = { tokyo: 48, hiroshima: 30 };
 
 function calcSavings(family, hasKid) {
   const rent = RENT[family] || RENT.single;
